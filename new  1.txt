@@ -1,6 +1,6 @@
 Hi Lucio,
 
-I've added this new paragraph of text for the second commit.
+This is the paragraph for the second ONLINE commit.
 
 I'll start with the bottom line: this is actually an interesting idea. In MRI/radiology, human observers (radiologists) are the *norm*, and computer assisted classification is secondary, while in NMR computer classification is king, and yet here we get a paper trying to reverse things. Human beings are very powerful visual pattern classifiers, and a (good!) radiologist will out-perform the best algorithms out there when reading images. We're particularly good at dealing with outliers, which throw most algorithms off. I'd bet the same holds for 1D audio signals. What sort of improvements can be had over algorithms is a valid question. 
 
