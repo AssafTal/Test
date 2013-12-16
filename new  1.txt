@@ -1,0 +1,41 @@
+Hi Lucio,
+
+I've added this new paragraph of text for the second commit.
+
+I'll start with the bottom line: this is actually an interesting idea. In MRI/radiology, human observers (radiologists) are the *norm*, and computer assisted classification is secondary, while in NMR computer classification is king, and yet here we get a paper trying to reverse things. Human beings are very powerful visual pattern classifiers, and a (good!) radiologist will out-perform the best algorithms out there when reading images. We're particularly good at dealing with outliers, which throw most algorithms off. I'd bet the same holds for 1D audio signals. What sort of improvements can be had over algorithms is a valid question. 
+
+Now for two reservations. First, a scientific one: why urine samples and why the task of telling two humans apart? Even if a human observer can tell two humans apart based on listening to their urine samples' FIDs, what's the point? It's a "counting the number of angels that can dance on the head of pin" sort of application. Why not go with an actual real-world application, such as telling apart different proteins, or using urine/blood samples to differentiate between patients and controls? I know it's asking for a lot of extra work from the authors, but I think their claim is meaningless unless they establish it has at least one meaningful application (I wonder if these past 3.5 years might have made me over-applicative, though!). Going down a biomedical route would allow them to compare their method's sensitivity/specificity to other methods published in the literature and not to a generic k-means algorithm found in R which may or may not be state-of-the-art. I suspect it's not.
+
+The second reservation is more of a personal one. Do we want to start reporting human findings instead of reproducible algorithmic results? Should every lab keep a trained "audiologist" at hand to interpret its spectra? The difficulties this introduces are staggering. To take an example from radiology again: the inter-rater variability between different radiologists is frightening; typically it's in the 60-70% range, meaning two independent random radiologists will agree only on about 60-70% of their decisions (of course, take two *good* ones and it becomes better). And who will certify the audiologists? But these are questions for the NMR community to answer, not for a reviewer, and they don't detract from the paper's fundamental premise which I think is interesting.
+
+I'll be happy to review the paper formally, although you can already tell what my recommendation would be (reject & resubmit with a more suitable application). It's a little unfair in the sense that the authors can still make their initial point without altering their application, but it's fair since I think their initial point is uninteresting without a suitable a I'll leave the headaches of an editor to you.
+
+As for me, I'm wrapping up things at NYU. At some point I will need your advice on a couple of administrative things - expect to hear that sentence multiple times the next few years! I'll give you a ring at some point over the next few weeks. 
+
+Best,
+Assaf
+
+
+
+Some specific comments:
+1. What was the listening environment? (important for standardization) What were the qualifications of the "experienced" listeners?
+2. The authors only use a very standard PCA algorithm. Is that the best there is? 
+3. I'd like to see sample urine spectra - preferrably all 8 samples (2 patients * 4 time points). I wonder if differences can be seen visually easily. 
+4. Why 2 volunteers/4 time points? Why not "patients" and "controls"? Surely that would be a more meaningful comparison. I understand it wouldn't affect their core point, but if they're already going for the "biomedical" angle, they should go all the way. Otherwise, why not just measure several proteins/molecules? 
+5. I'd like to see specificity/sensitivity for their method. 
+6. An ARI of 0.329 for the musicians doesn't sound very impressive. It looks like they have a very small p-value, but what is the actual significance? 
+
+Let me (discretely) consult two friends, one in the field of psychoacoustics and the other in the field of artificial intelligence to see whether the human ear has been put through similar tests before. I'll let you know in a day or two.
+
+
+From: Lucio Frydman [lucio.frydman@weizmann.ac.il]
+Sent: Sunday, July 14, 2013 4:28 AM
+To: Tal, Assaf
+Subject: confidential request: JMR-13-181.pdf
+Shalom Assaf
+I have a quick, confidential request to make: i have received this ms from an acquaintance, and it "sounds" like it's 19th century science. But i was wondering if you, like someone that knows about NMR, music and signal processing, would have a different read on it. Would you take a look at it and share with me your opinion? If you think it's worth undergoing a serious peer review (including stringent tests rather than just 2 volunteers) i'll go for it. If a lightweight that doesnt reach JMR standards, pls let me know as well
+How are things coming along otherwise?
+dash & see you soon
+L
+
+ 
